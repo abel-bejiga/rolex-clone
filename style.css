@@ -6,11 +6,15 @@
     scroll-behavior: smooth;
 
 }
-/* body {
-    background-color: green;
-} */
 
-                                    /* navigation */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+                                /* navigation */
 
 .nav11 {
     position: absolute;
@@ -236,8 +240,6 @@
     background-image: url(./image/sm_img/cellini_sm_md.jpg);
 }
 
-
-
 .rolex-album{
    display: flex;
    column-gap: 4px;
@@ -245,9 +247,7 @@
    white-space: nowrap;
    margin-bottom: 50px;
    cursor: pointer;
-}
-.pic1:hover .sea-dweller, .pic1:focus .sea-dweller, .pic2:hover .air-king, .pic3:hover .gmt-master, .pic4:hover, .pic5:hover, .pic6:hover {
-   
+
 }
 
 .sea-dweller, .air-king, .gmt-master, .day-date, .datejust, .explorer, .oyster, .yacht-master, .sky-dweller, .cosmograph, .lady-datejust, .submariner, .milgauss, .cellini  {
@@ -257,14 +257,17 @@
     height: 329px;
     width: 280px;
     background-position: center center;
-    
-    transition: all 1s;
- 
+    overflow: scroll;
+    transition: all 0.3s;
+
 }
 .sea-dweller:hover, .air-king:hover, .gmt-master:hover, .day-date:hover, .datejust:hover, .explorer:hover, .oyster:hover, .yacht-master:hover, .sky-dweller:hover, .cosmograph:hover, .lady-datejust:hover, .submariner:hover, .milgauss:hover, .cellini:hover {
     transform: scale(1.1);
     
     
+}
+.pic2 {
+    overflow: hidden;
 }
                 /* rolex album disc */
  
@@ -609,6 +612,7 @@
 
 }                                           
                                             /* first page disc  */
+
 .rolex-disc .second h1 {
     font-size: 40px;
     letter-spacing: 6px;
